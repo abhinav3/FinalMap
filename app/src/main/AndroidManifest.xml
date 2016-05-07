@@ -18,9 +18,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <meta-data
+        <!--<meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAFQmhz9dXSF7qW4JXg23VTIxn835nPiJw" />
+            android:value="AIzaSyAFQmhz9dXSF7qW4JXg23VTIxn835nPiJw" />-->
+
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDV47gB_zLrBtqcMOCsgFx_xPFWELp7uSA" />
+
+      <!--  <meta-data
+            android:name="com.google.android.gms.API_KEY"
+            android:value="AIzaSyDhFGUWlyd0KsjPQ59ATr-yL0bQKujHmeg"/>-->
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -36,6 +46,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".LocBuzzService" android:exported="false"/>
     </application>
 
 </manifest>
